@@ -8,7 +8,10 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
-    "deploy": "node server.js"
+    "deploy": "node server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
