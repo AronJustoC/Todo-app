@@ -9,7 +9,7 @@ app.use(cors());
 //get all todos
 app.get('/todos/:userEmail', async (req, res) => {
   console.log(req);
-  const userEmail = req.params.userEmail;
+  const { userEmail } = req.params;
   try {
     const todos = await pool.query('SELECT * FROM todos WHERE user_email = $1', [userEmail]);
     res.json(todos.rows);//rows es un arreglo que contiene los registros de la tabla

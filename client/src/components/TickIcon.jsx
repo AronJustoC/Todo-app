@@ -1,9 +1,9 @@
+import { FaRegCheckCircle } from "react-icons/fa";
+
 const TickIcon = () => {
 
   return (
-    <div>
-
-    </div>
+    <FaRegCheckCircle className="tick" />
   )
 }
 
